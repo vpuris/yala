@@ -1,0 +1,38 @@
+#!/bin/sh
+#  ┏┓┓ ┳┏┓┏┓┏┓┏┓
+#  ┣┫┃ ┃┣┫┗┓┣ ┗┓
+#  ┛┗┗┛┻┛┗┗┛┗┛┗┛
+#
+
+
+
+# settings for common commands
+alias ls="exa --icons=always -a --group-directories-first"
+alias exa="exa --icons=always -a --group-directories-first"
+alias lsd="exa --icons=always -a --group-directories-first"
+alias eza="exa --icons=always -a --group-directories-first"
+alias lf="lfcd"
+alias locate="plocate"
+alias tp="trash-put"
+alias tpr="trash-restore"
+alias cat='bat'
+alias grep='grep --color=always'
+
+# settings for text editors
+alias vim="micro"
+alias vi="micro"
+alias nano="micro"
+alias nvim="micro"
+alias micro="micro"
+
+# package managers
+alias yayS="yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S"
+alias pacman="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed"
+alias paruS="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
+
+# wallpaper
+alias waypaper="find ~/.config/wallpapers -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.webp' \) \
+| fzf --preview 'chafa --size=60x30 {}' --preview-window=right:60%:wrap"
+
+# anime
+alias ani-cli="fastanime --icons --preview --fzf anilist"

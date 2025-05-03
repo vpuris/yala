@@ -1,0 +1,47 @@
+zsh
+fish
+bash
+cd /usr/share/wayland-sessions
+sudo pacman -S --needed fzf
+fzf
+fzf
+micro hyprland.desktop
+micro hyprland.desktop
+micro hyprland-uwsm.desktop
+cd ~
+cd /usr/share
+micro hyprland.desktop
+cd /usr/share/wayland-sessions/
+micro hyprland.desktop
+cd ~
+eza
+exa
+git clone https://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@github.com/vpuris/hyprdots.git
+sudo pacman -S grimblast-git feh
+cd hyprdots
+ls
+eza
+cd ~
+ls -a
+eza -a
+cd hyprdots
+ls
+eza
+eza -a
+cp .zshrc ~
+cd yabai
+ls
+cd ~
+cd hyprdots
+cp -r yabai /home/anko/.config/
+cp zaliases ~
+cd ~/.config
+ls
+micro user-dirs.dirs
+cd ~
+ls
+cd Pictures
+ls
+mkdir ss
+ls
+reboot
